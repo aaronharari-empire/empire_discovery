@@ -1,0 +1,37 @@
+# Ignore bundler config.
+.bundle/
+
+# Ignore log files and temp files.
+log/*
+tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore Rails cache, assets, and other generated files.
+**/*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+public/assets
+public/packs
+node_modules/
+.byebug_history
+*.swp
+
+# Ignore dotenv files.
+.env
+.env.*
+
+# Ignore database config (if you keep it local).
+config/database.yml
+
+# Ignore editor files.
+*.sqlite3
+*.sqlite3-journal
+*.DS_Store
+*.idea/
+*.vscode/
+*.iml
+
+# Ignore system files.
+*.pid

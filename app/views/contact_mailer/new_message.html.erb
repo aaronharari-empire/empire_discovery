@@ -1,0 +1,21 @@
+<label>Full name:</label>
+<br>
+<strong><%= @contact_message[:name] %></strong>
+<br><br>
+
+<label>E-mail:</label>
+<br>
+<strong><%= @contact_message[:email] %></strong>
+<br><br>
+
+<% if @contact_message[:phone].present? %>
+  <label>Phone:</label>
+  <br>
+  <strong><%= @contact_message[:phone] %></strong>
+  <br><br>
+<% end %>
+
+<label>Message:</label>
+<br>
+<p><strong><%= @contact_message[:message] %></strong></p>
+<br><br>
